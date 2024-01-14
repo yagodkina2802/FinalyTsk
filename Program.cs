@@ -1,6 +1,6 @@
-﻿string[] array = new string[5] {"Hello", "2", "world", ":-)"};
+﻿string[] array = new string[4] {"Hello", "2", "world", ":-)"};
 string[] array1 = new string[array.Length];
-void GetArray(string[] array, string[] array2)
+void GetArray(string[] array, string[] array1)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -12,3 +12,14 @@ void GetArray(string[] array, string[] array2)
         }
     }
 }
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+GetArray(array, array1);
+PrintArray(array1);
